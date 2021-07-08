@@ -110,7 +110,7 @@ export default {
 .v-navigation-drawer {
   margin-top: 56px;
   position: fixed;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 }
 .open {
   display: none;
