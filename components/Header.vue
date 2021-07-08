@@ -68,6 +68,7 @@ export default {
 }
 .v-toolbar__title {
   overflow: visible;
+  white-space: nowrap;
   span {
     font-family: 'Pinyon Script', cursive;
     font-size: 45px;
@@ -121,7 +122,9 @@ export default {
   &:first-child {
     margin-top: 20px;
   }
-  &.v-list-item--active {
+}
+.v-list-item-group {
+  .v-list-item--active {
     color: aqua;
   }
 }
