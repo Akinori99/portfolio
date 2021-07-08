@@ -8,7 +8,7 @@
             src="~assets/images/mylogo.svg"
             alt="mylogo"
           /> </router-link
-        > <span>Portfolio</span></v-toolbar-title
+        > <div>Portfolio</div></v-toolbar-title
       >
       <v-tabs>
         <v-tab
@@ -68,10 +68,10 @@ export default {
 }
 .v-toolbar__title {
   overflow: visible;
-  span {
+  div {
     overflow: visible;
     display: inline-block;
-    width: 160px;
+    width: 150px;
     font-family: 'Pinyon Script', cursive;
     font-size: 45px;
   }
@@ -79,7 +79,7 @@ export default {
     height: 55px;
     position: relative;
     top: -4px;
-    margin: 0 5px;
+    margin-left: 10px;
   }
 }
 .v-tabs-bar__content {
