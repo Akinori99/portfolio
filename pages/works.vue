@@ -25,7 +25,9 @@
             <h3>サイトURL</h3>
             <p>※このサイト</p>
             <h3>コード</h3>
-            <p>GitHub:</p>
+            <p><a href="https://github.com/Akinori99/portfolio"
+                >https://github.com/Akinori99/portfolio</a
+              ></p>
             <h3>作成日</h3>
             <p>2021/07/03</p>
           </div>
