@@ -68,8 +68,10 @@ export default {
 }
 .v-toolbar__title {
   overflow: visible;
-  width: 15vw;
   span {
+    overflow: visible;
+    display: inline-block;
+    width: 160px;
     font-family: 'Pinyon Script', cursive;
     font-size: 45px;
   }
@@ -118,20 +120,20 @@ export default {
     display: block;
   }
 }
-.v-list-item {
-  &:first-child {
-    margin-top: 20px;
-  }
-}
-.v-list-item-group .v-list-item--active {
-    color: aqua;
-  }
 .v-list-item__title {
   & > div {
     margin: 15px 0;
     padding: 20px 0;
     font-size: 25px;
     font-weight: bold;
+  }
+}
+.v-list-item {
+  &:first-child {
+    margin-top: 20px;
+  }
+  &.v-list-item--active {
+    color: aqua;
   }
 }
 .close {
