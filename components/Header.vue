@@ -69,7 +69,7 @@ export default {
 .v-toolbar__title {
   overflow: visible;
   font-family: 'Pinyon Script', cursive;
-  font-size: 2.9rem;
+  font-size: 50px;
   width: 50%;
   margin-left: 15px;
   @include h {
@@ -89,10 +89,11 @@ export default {
   margin-right: 30px;
   @include h {
     display: none;
+    z-index: -1;
   }
   .v-tab {
     margin-left: 15px;
-    font-size: 1.4rem;
+    font-size: 35px;
     font-weight: bold;
     letter-spacing: 0.15rem;
     &:hover {
