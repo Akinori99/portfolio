@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+// 共通部分
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+}
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  color: black;
+}
+img {
+  max-width: 100%;
+}
+a {
+  display: inline-block;
+  &:hover{
+    text-decoration: none;
+    color: azure;
+    opacity: .7;
+  }
+}
+.page-set {
+  @include contentPosition(absolute, none);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  text-align: center;
+  &::before {
+    @include contentPosition(fixed);
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1%;
+  position: relative;
+  overflow: hidden;
+}
+
+// ページごとの背景画像
+.index {
+  background-image: url(~assets/images/top.jpg);
+}
+.works {
+  background-image: url(~assets/images/works.jpg);
+}
+.about {
+  background-image: url(~assets/images/about.jpg);
+}
+
+// ページ遷移アニメーション
+.layout-enter-active,
+.layout-leave-active {
+  transition: .4s .5s ease-in;
+}
+.layout-enter,
+.layout-leave-active {
+  opacity: .04;
+}
+
+
+// ページタイトル
+.title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 140px;
+  line-height: 0.95;
+  color: azure;
+  text-shadow: 0 0 10px #ff0;
+  h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-weight: normal;
+    font-size: 240px;
+    @include tb {
+      font-size: 150px;
+    }
+    @include sp {
+      font-size: 85px;
+      letter-spacing: -3px;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 180px;
+    opacity: 0.9;
+    @include sp {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// スクロール誘導
+.scroll {
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  height: 40px;
+  @include tb {
+    top: 280px;
+  }
+  @include sp {
+    top: 220px;
+  }
+  span {
+  position: absolute;
+  left:-19px;
+  top: -15px;
+  color: #eee;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  }
+  &::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  background: #eee;
+  animation: pathmove 1.5s ease-in-out infinite;
+  opacity:0;
+    @keyframes pathmove {
+      0%{
+        height:0;
+        top:0;
+        opacity: 0;
+      }
+      30%{
+        height:30px;
+        opacity: 1;
+      }
+      100%{
+        height:0;
+        top:50px;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+// ページコンテンツ
+.content {
+  background: rgba($color: azure, $alpha: 0.75);
+  color: black;
+  border-radius: 10px;
+  padding: 1% 2%;
+  width: 100%;
+}
+.item {
+  color: black;
+  padding: 3% 6%;
+  opacity: 0.9;
+  border-radius: 10px;
+  background: linear-gradient(225deg, #f8f8f8, #d1d1d1);
+  box-shadow: -5px 5px 6px #bababa, 5px -5px 6px #fff;
+  width: 100%;
+  h2 {
+    border-bottom: 3px #0bd double;
+    margin-bottom: 15px;
+  }
+}
+
+// レスポンシブ改行
+.br-tb {
+  display: none;
+  @include tb {
+    display: block;
+  }
+}
+.br-sp {
+  display: none;
+  @include sp {
+    display: block;
+  }
+}
+
+// ページ遷移ボタン（ページ下部）
+.btn {
+  text-shadow: rgb(224, 191, 57) 1px 0 1px;
+  display: inline-block;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 1.5rem;
+  background: rgba($color: aqua, $alpha: 0.8);
+  color: azure;
+  border: double 1px rgb(95, 90, 90);
+  border-radius: 162px;
+  background: #3dc1db;
+  box-shadow: inset 6px 6px 12px #329eb4, inset -6px -6px 12px #48e4ff;
+  padding: 14px 70px;
+  margin: 70px 0 130px;
+  &:hover {
+  transform: scale(0.95);
+  }
+}
+

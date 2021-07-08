@@ -1,0 +1,163 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: azure;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+  color: azure;
+  opacity: 0.6;
+}
+a:focus {
+  outline: none;
+}
+a.nuxt-link-exact-active {
+  color: aqua;
+}
+
+.page-set {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  text-align: center;
+}
+.page-set .top {
+  background-image: url(~assets/images/top.jpg);
+}
+.page-set::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 3%;
+  position: relative;
+}
+
+.header {
+  z-index: 1;
+  background: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  opacity: 0.85;
+}
+.header .mylogo {
+  padding-top: 5px;
+  height: 65px;
+}
+.header .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+.header .header-nav:last-child {
+  margin-right: 15px;
+}
+.header .header-nav li {
+  margin-left: 45px;
+  opacity: 0.9;
+}
+.header .header-nav .sub-name {
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  color: azure;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 140px;
+  line-height: 0.95;
+  color: azure;
+  text-shadow: 0 0 10px #ff0;
+}
+.title h1 {
+  font-family: "Pinyon Script", cursive;
+  font-weight: normal;
+  font-size: 210px;
+}
+.title p {
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  margin-bottom: 130px;
+  opacity: 0.9;
+}
+
+.content-box {
+  background: rgba(240, 255, 255, 0.9);
+  color: black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn {
+  text-shadow: #e0bf39 1px 0 1px;
+  display: inline-block;
+  font-size: 1.5rem;
+  background: rgba(0, 255, 255, 0.8);
+  color: azure;
+  border-radius: 162px;
+  background: #3dc1db;
+  -webkit-box-shadow: inset 6px 6px 12px #329eb4, inset -6px -6px 12px #48e4ff;
+          box-shadow: inset 6px 6px 12px #329eb4, inset -6px -6px 12px #48e4ff;
+  padding: 14px 42px;
+  margin: 85px 0;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 7vh;
+  background: rgba(61, 47, 33, 0.5);
+  text-align: center;
+  padding: 20px 0;
+}
+.footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+/*# sourceMappingURL=common.css.map */
