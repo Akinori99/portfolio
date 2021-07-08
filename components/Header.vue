@@ -67,8 +67,8 @@ export default {
   max-width: 100vw;
 }
 .v-toolbar__title {
-  overflow: visible;
   span {
+    overflow: visible;
     font-family: 'Pinyon Script', cursive;
     font-size: 45px;
   }
@@ -89,7 +89,7 @@ export default {
       display: none;
     }
     margin-left: 15px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: 0.1rem;
     &:hover {
