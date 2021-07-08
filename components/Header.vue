@@ -129,6 +129,7 @@ export default {
   }
 }
 .v-list-item {
+  position: relative;
   &:first-child {
     margin-top: 20px;
   }
