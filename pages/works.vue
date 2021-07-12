@@ -9,7 +9,7 @@
       <div class="works-grid">
         <!-- ポートフォリオ -->
         <div class="item">
-          <a href="#"
+          <a
             ><img
               class="item-img"
               src="~assets/images/portfolio.jpg"
@@ -29,7 +29,7 @@
                 >https://github.com/Akinori99/portfolio</a
               ></p>
             <h3>作成日</h3>
-            <p>2021/07/03</p>
+            <p>2021/07/03<br />【更新：2021/07/13】</p>
           </div>
         </div>
         <!-- タイマー機能付きToDoリスト -->
@@ -97,9 +97,14 @@
             <p>2021/06/26<br />【更新：2021/06/29】</p>
           </div>
         </div>
-        <!-- 作品名 -->
+        <!-- Coming Soon... -->
         <div class="item">
-          <img class="item-img" src="~assets/images/noimg.jpg" alt="No Image" />
+          <a
+          ><img
+            class="item-img"
+            src="~assets/images/noimg.jpg"
+            alt="No Image"
+          /></a>
           <h2>Coming Soon...</h2>
           <div class="work-desc">
             <p>新たに作品が完成したら、こちらに追加していく予定です。</p>
