@@ -85,21 +85,20 @@ export default {
   max-width: 100vw;
 }
 .mylogo {
-  height: 54px;
+  height: 55px;
   position: relative;
-  top: -4px;
+  top: 0;
   margin:0 10px;
 }
 .v-toolbar__title {
-  width: 260px;
+  min-width: fit-content;
   .h-title {
-    overflow: visible;
     font-family: 'Pinyon Script', cursive;
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 .v-tabs-bar__content {
-  z-index: 10;
+  z-index: 5;
   display: block flex;
   justify-content: flex-end;
   margin-right: 30px;
