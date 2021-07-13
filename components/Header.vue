@@ -13,7 +13,9 @@
         src="~assets/images/mylogo.svg"
         alt="mylogo"
       />
-      <v-toolbar-title class="h-title" v-text="title" />
+      <v-toolbar-title>
+        <div class="h-title">Portfolio</div>
+      </v-toolbar-title>
       <v-tabs>
         <v-tab
           v-for="(menuItem, index) in menuItems"
@@ -71,7 +73,6 @@ export default {
     return {
       drawer: false,
       menuItems: constants.menuItems,
-      title: 'Portfolio',
     }
   },
 
@@ -89,12 +90,12 @@ export default {
   top: -4px;
   margin:0 10px;
 }
-.h-title {
-  overflow: visible;
-  display: inline-block;
+.v-toolbar__title {
   width: 150px;
-  font-family: 'Pinyon Script', cursive;
-  font-size: 45px;
+  .h-title {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 30px;
+  }
 }
 .v-tabs-bar__content {
   z-index: 10;
