@@ -24,11 +24,6 @@ export default {
     ],
     link: [
       // ファビコン
-      // {
-      //   rel: 'icon',
-      //   type: 'image/svg+xml',
-      //   href: '/portfolio/favicon.svg',
-      // },
       {
         rel: 'icon alternate',
         type: 'image/png',

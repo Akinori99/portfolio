@@ -1,15 +1,19 @@
 <template>
+
   <header>
-    <v-app-bar app dark>
-      <v-toolbar-title
-        ><router-link to="/">
-          <img
-            class="mylogo"
-            src="~assets/images/mylogo.svg"
-            alt="mylogo"
-          /> </router-link
-        > <div>Portfolio</div></v-toolbar-title
-      >
+    <v-app-bar
+      app
+      fixed
+      dark
+      hide-on-scroll
+      height="55px"
+    >
+      <img
+        class="mylogo"
+        src="~assets/images/mylogo.svg"
+        alt="mylogo"
+      />
+      <v-toolbar-title v-text="title" />
       <v-tabs>
         <v-tab
           v-for="(menuItem, index) in menuItems"
@@ -19,13 +23,23 @@
           {{ menuItem.name }}
         </v-tab>
       </v-tabs>
-      <div class="open" @click="drawer = true">≡</div>
+      <v-app-bar-nav-icon
+        v-if="drawer === false"
+        class="open"
+        @click="drawer = !drawer"
+      />
+      <v-icon
+        v-else-if="drawer === true"
+        @click="drawer = false"
+      >
+        mdi-close
+      </v-icon>
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
-      absolute
+      fixed
       temporary
-      width="60%"
+      width="55%"
       dark
       right
     >
@@ -51,13 +65,16 @@
 
 <script>
 import constants from '~/assets/constants'
+
 export default {
   data() {
     return {
       drawer: false,
       menuItems: constants.menuItems,
+      title: 'Portfolio',
     }
   },
+
 }
 </script>
 
@@ -66,21 +83,19 @@ export default {
 .v-app-bar {
   max-width: 100vw;
 }
+.mylogo {
+  height: 54px;
+  position: relative;
+  top: -4px;
+  margin:0 10px;
+}
 .v-toolbar__title {
   overflow: visible;
-  div {
-    overflow: visible;
-    display: inline-block;
-    width: 150px;
-    font-family: 'Pinyon Script', cursive;
-    font-size: 45px;
-  }
-  .mylogo {
-    height: 55px;
-    position: relative;
-    top: -4px;
-    margin-left: 10px;
-  }
+  overflow: visible;
+  display: inline-block;
+  width: 150px;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 45px;
 }
 .v-tabs-bar__content {
   z-index: 10;
@@ -108,17 +123,8 @@ export default {
 
 // ナビゲーションドロワー
 .v-navigation-drawer {
-  margin-top: 56px;
+  margin-top: 55px;
   position: fixed;
-  // overflow-y: scroll;
-}
-.open {
-  display: none;
-  font-size: 3.5rem;
-  margin-left: 10px;
-  @include h {
-    display: block;
-  }
 }
 .v-list-item__title {
   & > div {
@@ -137,14 +143,21 @@ export default {
     color: aqua;
   }
 }
+.open {
+  display: none;
+  font-size: 3.5rem;
+  margin-left: 10px;
+  @include h {
+    display: block;
+  }
+}
 .close {
   display: inline-block;
   position: absolute;
   right: 0;
   height: fit-content;
-  padding-bottom: 30px;
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 3rem;
   p {
     display: inline;
   }
