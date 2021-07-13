@@ -27,12 +27,12 @@ export default {
       {
         rel: 'icon',
         type: 'image/svg+xml',
-        href: '/portfolio/favicon.svg',
+        href: 'https://akinori99.github.io/portfolio/favicon.svg',
       },
       {
         rel: 'icon alternate',
         type: 'image/png',
-        href: '/portfolio/favicon.png',
+        href: 'https://akinori99.github.io/portfolio/favicon.png',
       },
       // リセットCSS(Rester.css)
       {
