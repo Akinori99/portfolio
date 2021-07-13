@@ -27,7 +27,7 @@
       </v-tabs>
       <v-app-bar-nav-icon
         v-if="drawer === false"
-        class="open"
+        id="open"
         @click="drawer = !drawer"
       />
       <v-icon
@@ -144,7 +144,7 @@ export default {
     color: aqua;
   }
 }
-.open {
+#open {
   display: none;
   font-size: 3.5rem;
   margin-left: 10px;
