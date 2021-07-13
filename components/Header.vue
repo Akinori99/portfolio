@@ -140,7 +140,7 @@ export default {
   &:first-child {
     margin-top: 20px;
   }
-  &.v-list-item--active {
+  &.v-item--active {
     color: aqua;
   }
 }
