@@ -93,6 +93,7 @@ export default {
 .v-toolbar__title {
   width: 250px;
   .h-title {
+    overflow: visible;
     font-family: 'Pinyon Script', cursive;
     font-size: 30px;
   }
