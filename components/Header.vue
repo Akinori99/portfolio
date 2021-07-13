@@ -13,7 +13,7 @@
         src="~assets/images/mylogo.svg"
         alt="mylogo"
       />
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title class="h-title" v-text="title" />
       <v-tabs>
         <v-tab
           v-for="(menuItem, index) in menuItems"
@@ -89,8 +89,7 @@ export default {
   top: -4px;
   margin:0 10px;
 }
-.v-toolbar__title {
-  overflow: visible;
+.h-title {
   overflow: visible;
   display: inline-block;
   width: 150px;
