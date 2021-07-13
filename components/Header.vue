@@ -140,7 +140,9 @@ export default {
     margin-top: 20px;
   }
   &.v-item--active {
-    color: aqua;
+    .v-list-item__title {
+      color: aqua;
+    }
   }
 }
 #open {
