@@ -91,7 +91,7 @@ export default {
   margin:0 10px;
 }
 .v-toolbar__title {
-  width: 250px;
+  width: 260px;
   .h-title {
     overflow: visible;
     font-family: 'Pinyon Script', cursive;
