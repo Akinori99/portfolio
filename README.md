@@ -8,7 +8,7 @@ HTML、SCSS、JavaScript（Vue.js、Nuxt.js）
 
 
 ## サイトURL(Site URL)
-https://github.com/Akinori99/portfolio
+https://akinori99.github.io/portfolio/
 
 
 ## 作成日(Day of composition)
