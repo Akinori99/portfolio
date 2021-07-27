@@ -71,7 +71,7 @@ export default {}
   height: fit-content;
   p {
     text-align: left;
-    padding: 10px 0;
+    padding: 15px 20px;
     span {
       display: inline-block;
       border-bottom: 1px solid black;
