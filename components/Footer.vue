@@ -10,9 +10,8 @@
 .footer {
   display: flex;
   align-items: center;
-  height: 5vh;
+  height: 30px;
   margin: 0 auto;
-  padding-top: 1.6vh;
   p {
     color: azure;
     font-size: 0.9rem;

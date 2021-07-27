@@ -1,8 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="title">
-      <h1>Akinori's</h1>
-      <h1>Portfolio</h1>
+      <h1>Akinori's<br>Portfolio</h1>
     </div>
     <router-link to="/works" class="btn"> 作品を見る </router-link>
     <div class="top-contact">

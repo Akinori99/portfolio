@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 100%;
@@ -17,8 +18,8 @@ img {
 }
 a {
   display: inline-block;
+  text-decoration: none;
   &:hover{
-    text-decoration: none;
     color: azure;
     opacity: .7;
   }
@@ -72,14 +73,16 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 140px;
+  margin-top: 70px;
+  margin-bottom: 0;
   line-height: 0.95;
   color: azure;
   text-shadow: 0 0 10px #ff0;
   h1 {
     font-family: 'Pinyon Script', cursive;
     font-weight: normal;
-    font-size: 240px;
+    font-size: 220px;
+    margin-bottom: 0;
     @include tb {
       font-size: 150px;
     }
@@ -91,7 +94,7 @@ a {
   p {
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
-    margin-bottom: 180px;
+    margin-bottom: 185px;
     opacity: 0.9;
     @include sp {
       font-size: 1.1rem;
@@ -102,14 +105,14 @@ a {
 // スクロール誘導
 .scroll {
   position: absolute;
-  top: 370px;
+  top: 490px;
   left: 50%;
-  height: 40px;
+  height: 50px;
   @include tb {
-    top: 280px;
+    top: 380px;
   }
   @include sp {
-    top: 220px;
+    top: 270px;
   }
   span {
   position: absolute;
@@ -157,15 +160,18 @@ a {
 }
 .item {
   color: black;
-  padding: 3% 6%;
+  padding: 2%;
   opacity: 0.9;
   border-radius: 10px;
   background: linear-gradient(225deg, #f8f8f8, #d1d1d1);
   box-shadow: -5px 5px 6px #bababa, 5px -5px 6px #fff;
-  width: 100%;
+  min-width: 100%;
   h2 {
     border-bottom: 3px #0bd double;
     margin-bottom: 15px;
+  }
+  @include sp {
+
   }
 }
 
@@ -196,7 +202,7 @@ a {
   background: #3dc1db;
   box-shadow: inset 6px 6px 12px #329eb4, inset -6px -6px 12px #48e4ff;
   padding: 14px 70px;
-  margin: 70px 0 130px;
+  margin: 75px 0;
   &:hover {
   transform: scale(0.95);
   }
