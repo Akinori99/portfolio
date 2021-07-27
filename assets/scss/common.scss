@@ -19,6 +19,7 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  word-break: break-all;
   &:hover{
     color: azure;
     opacity: .7;
