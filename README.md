@@ -12,4 +12,4 @@ https://akinori99.github.io/portfolio/
 
 
 ## 作成日(Day of composition)
-2021/07/03  【更新(Update)：2021/07/13】
+2021/07/03  【更新(Update)：2021/07/27】
