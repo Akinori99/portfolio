@@ -7,6 +7,7 @@
     </div>
     <div class="content">
       <div class="works-grid">
+      <!-- ↓↓ ブロックを別ファイルに配列化し forEachメソッドを用いて展開 -->
         <!-- ポートフォリオ -->
         <div class="item">
           <a
@@ -118,6 +119,7 @@
             <p>Coming Soon...</p>
           </div>
         </div>
+        <!-- ↑↑ -->
       </div>
     </div>
     <router-link to="/about" class="btn"> 自己紹介へ </router-link>

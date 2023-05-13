@@ -9,6 +9,7 @@
       <div class="myimg">
         <img src="~assets/images/myface.jpg" alt="myface" />
       </div>
+      <!-- ↓↓ <myname><introduction><skills><contact>の要素を別ファイルに配列化し forEachメソッドを用いて展開-->
       <div class="myname">
         <h1>阿部亮則</h1>
         <p>-Abe Akinori-</p>
@@ -83,6 +84,7 @@
         </p>
         <p>※GitHubにて作品のコードを<br class="br-sp" />公開中！</p>
       </div>
+      <!-- ↑↑ -->
       <div class="twitter item">
         <h2>Twitter</h2>
         <a

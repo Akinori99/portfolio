@@ -8,6 +8,7 @@
       hide-on-scroll
       height="55px"
     >
+    <!-- ↓↓ ロゴ画像とタイトルをクリックしたらホーム遷移するようリンク付 -->
       <img
         class="mylogo"
         src="~assets/images/mylogo.svg"
@@ -16,6 +17,7 @@
       <v-toolbar-title>
         <div class="h-title">Portfolio</div>
       </v-toolbar-title>
+      <!-- ↑↑ -->
       <v-tabs>
         <v-tab
           v-for="(menuItem, index) in menuItems"
@@ -57,7 +59,9 @@
             </v-list-item-title>
           </v-list-item>
           <div class="close" @click="drawer = false">
+            <!-- ↓↓ ×の判定範囲を適切なものに修正 -->
             <p>✕</p>
+            <!-- ↑↑ -->
           </div>
         </v-list-item-group>
       </v-list>
