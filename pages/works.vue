@@ -8,6 +8,7 @@
     <div class="content">
       <div class="works-grid">
       <!-- ↓↓ ブロックを別ファイルに配列化し forEachメソッドを用いて展開 -->
+      <!-- また、各ブロックの詳細をモーダルウィンドウで表示するように変更 -->
         <!-- ポートフォリオ -->
         <div class="item">
           <a

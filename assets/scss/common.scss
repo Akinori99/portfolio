@@ -48,6 +48,7 @@ a {
 }
 
 // ページごとの背景画像
+// ↓↓ bgimgをjsで変更するように修正
 .index {
   background-image: url(~assets/images/top.jpg);
 }
@@ -57,6 +58,7 @@ a {
 .about {
   background-image: url(~assets/images/about.jpg);
 }
+// ↑↑
 
 // ページ遷移アニメーション
 .layout-enter-active,
@@ -104,6 +106,7 @@ a {
 }
 
 // スクロール誘導
+// ↓↓ スマホ、PC、タブレットでそれぞれ画面いっぱいに誘導表示するように変更
 .scroll {
   position: absolute;
   top: 490px;
@@ -152,6 +155,7 @@ a {
 }
 
 // ページコンテンツ
+// ↓↓ 要素を監視し、画面に現れたらふわっと下から表示するように変更
 .content {
   background: rgba($color: azure, $alpha: 0.75);
   color: black;
@@ -191,6 +195,7 @@ a {
 }
 
 // ページ遷移ボタン（ページ下部）
+// ↓↓ 正直デザインがダサいので、落ち着いた雰囲気のものに修正
 .btn {
   text-shadow: rgb(224, 191, 57) 1px 0 1px;
   display: inline-block;
